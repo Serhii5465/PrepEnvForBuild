@@ -1,4 +1,4 @@
-def CheckAgent(String label){
+def call(String label){
     online_nodes = nodesByLabel label: "${label}", offline: false
     if (online_nodes) {
         echo "${label} online"
